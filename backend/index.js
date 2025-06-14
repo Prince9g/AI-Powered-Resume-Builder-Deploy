@@ -18,7 +18,7 @@ app.use(cookieParser());
 const PORT = process.env.PORT || 8080;
 
 const corsOption =  {
-    origin:'http://localhost:5173',
+    origin:'https://ai-powered-resume-builder-deploy.onrender.com/',
     credentials :true
 }
 

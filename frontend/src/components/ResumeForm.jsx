@@ -80,7 +80,7 @@ const ResumeForm = ({formData, setFormData}) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:8080/api/resume', 
+      const res = await axios.post('https://ai-powered-resume-builder-deploy.onrender.com/api/resume', 
         formData, {withCredentials: true},
       );
       console.log(res);

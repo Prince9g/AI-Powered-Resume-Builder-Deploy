@@ -17,7 +17,7 @@ const MyResumes = ({ onEdit }) => {
     useEffect(()=>{
       const fetchResumes = async () => {
         try {
-          const res = await axios.get("http://localhost:8080/api/resume/user-resumes", {
+          const res = await axios.get("https://ai-powered-resume-builder-deploy.onrender.com/api/resume/user-resumes", {
             withCredentials: true,
           });
           console.log(res);
@@ -70,7 +70,7 @@ const MyResumes = ({ onEdit }) => {
   // const handleDelete = async (resumeId, event) => {
   //   event.stopPropagation();
   //   try {
-  //     const { data } = await axios.delete(`http://localhost:8080/api/resume/${resumeId}`, {
+  //     const { data } = await axios.delete(`https://ai-powered-resume-builder-deploy.onrender.com//api/resume/${resumeId}`, {
   //       withCredentials: true,
   //     });
       

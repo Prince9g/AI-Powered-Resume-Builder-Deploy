@@ -18,7 +18,7 @@ const SignUp = () => {
       toast.error("Passwords do not match!");
     }
     try {
-      const res = await axios.post("http://localhost:8080/api/auth/register", formData
+      const res = await axios.post("https://ai-powered-resume-builder-deploy.onrender.com/api/auth/register", formData
       )
       console.log(res);
       if(res){
